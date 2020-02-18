@@ -25,6 +25,40 @@ class Fecha{
             "Diciembre"];
     }
     getAños(){
-
+        let x = Date.now() - this.fecha;
+        let z = 1000*60*60*24*365;
+        let fechaDiferencia = Math.trunc(x/z);
+        return `la diferencia de la fecha es de ${fechaDiferencia} años`;
+    }
+    getMeses(){
+        let x = Date.now() - this.fecha;
+        let z = 1000*60*60*24*7*4;
+        let fechaDiferencia = Math.trunc(x/z);
+        return `la diferencia de la fecha es de ${fechaDiferencia} meses`;
+    }
+    getSemanas(){
+        let x = Date.now() - this.fecha;
+        let z = 1000*60*60*24*7;
+        let fechaDiferencia = Math.trunc(x/z);
+        return `la diferencia de la fecha es de ${fechaDiferencia} semanas`;
+    }
+    getDias(){
+        let x = Date.now() - this.fecha;
+        let z = 1000*60*60*24;
+        let fechaDiferencia = Math.trunc(x/z);
+        return `la diferencia de la fecha es de ${fechaDiferencia} dias`; 
+    }
+    getFecha(){
+        return `${this.fecha.getDate()}/${this.mesAño[this.fecha.getMonth()]}/${this.fecha.getFullYear()}`;
+    }
+    getDiaFecha(){
+        return `${this.diaSemana[this.fecha.getDay()]}`;        
     }
 }
+let fecha1 = new Fecha(17,2,2019);
+console.log(fecha1.getFecha());
+console.log(fecha1.getDiaFecha());
+console.log(fecha1.getDias());
+console.log(fecha1.getSemanas());
+console.log(fecha1.getMeses());
+console.log(fecha1.getAños());
