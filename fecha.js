@@ -1,5 +1,10 @@
-class Fecha{
-    
+export default class Fecha{
+    /**
+     * 
+     * @param {number} dia 
+     * @param {number} mes 
+     * @param {number} año 
+     */    
     constructor(dia, mes, año){ 
         this.fecha = new Date(año, mes-1, dia);
         this.diaSemana = [
@@ -55,6 +60,7 @@ class Fecha{
         return `${this.diaSemana[this.fecha.getDay()]}`;        
     }
 }
+/*
 let fecha1 = new Fecha(17,2,2019);
 console.log(fecha1.getFecha());
 console.log(fecha1.getDiaFecha());
@@ -62,3 +68,4 @@ console.log(fecha1.getDias());
 console.log(fecha1.getSemanas());
 console.log(fecha1.getMeses());
 console.log(fecha1.getAños());
+*/
