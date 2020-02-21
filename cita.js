@@ -2,7 +2,6 @@ import Paciente from "./paciente.js";
 import Fecha from "./fecha.js";
 import Tiempo from "./tiempo.js";
 import Doctor from "./doctor.js";
-import Nombre from "./nombre.js";
 
 export default class Cita {
   /**
