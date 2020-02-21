@@ -1,14 +1,15 @@
-export default class Nombre{
+export default class Nombre {
     /**
-     * 
-     * @param {string} nombre 
-     * @param {string} apellidoPaterno 
-     * @param {string} apellidoMaterno 
+     *
+     * @param {string} nombre | Nombre del paciente
+     * @param {string} apellidoPaterno | Apellido paterno del paciente
+     * @param {string} apellidoMaterno | Apellido materno del paciente
      */
-    constructor(nombre, apellidoPaterno, apellidoMaterno){
-        this.nombre = nombre;
-        this.apellidoPaterno = apellidoPaterno;
-        this.apellidoMaterno = apellidoMaterno;
+  
+    constructor(nombre, apellidoPaterno, apellidoMaterno) {
+      this.nombre = nombre;
+      this.apellidoPaterno = apellidoPaterno;
+      this.apellidoMaterno = apellidoMaterno;
     }
 
     getNombreCompleto(){

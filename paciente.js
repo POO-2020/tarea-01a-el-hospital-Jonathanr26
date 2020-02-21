@@ -13,7 +13,7 @@ export default class Paciente{
         this.telefono = telefono;
     }
     getPerfil(){
-        return `Nombre: ${this.nombre}, Fecha de nacimiento: ${this.fechaNacimiento.getFecha}, Telefono: ${this.telefono}`
+        return `Nombre: ${this.nombre.getNombreCompleto()}, Fecha de nacimiento: ${this.fechaNacimiento.getFecha()}, Telefono: ${this.telefono}`
     }
 }
 /*
