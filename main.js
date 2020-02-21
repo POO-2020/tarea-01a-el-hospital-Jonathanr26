@@ -12,13 +12,11 @@ class Main{
     }
 
     agregarDoctor() {
-        let doctor1 = new Doctor(
-          new Nombre("Guillermo", "Diaz", "Del Toro"),
+        let doctor1 = new Doctor(new Nombre("Guillermo", "Diaz", "Del Toro"),
           "Oftalmologia",
           3121991888,
           8888888);
-        let doctor2 = new Doctor(
-          new Nombre("Samuel", "De Luque", "Batuecas"),
+        let doctor2 = new Doctor(new Nombre("Samuel", "De Luque", "Batuecas"),
           "Otorrinolaringologia",
           3127777777,
           777);
@@ -27,18 +25,15 @@ class Main{
         this.hospital.listarDoctores();
     }
     agregarCita() {
-        let cita1 = new Cita(
-          new Fecha(29, 2, 2020),
+        let cita1 = new Cita(new Fecha(29, 2, 2020),
           new Tiempo(6, 45, "PM"),
           new Doctor(new Nombre("Samuel", "De Luque", "Batuecas"),
             "Otorrinolaringologia",
             3127777777,
             777),
-          new Paciente(
-            new Nombre("Jonathan", "Rodriguez", "Villaseñor"),
+          new Paciente(new Nombre("Jonathan", "Rodriguez", "Villaseñor"),
             new Fecha(26, 10, 2000),
-            3121691160)
-        );
+            3121691160));
         this.hospital.registrarCita(cita1);
         this.hospital.listarCitas();
       }
