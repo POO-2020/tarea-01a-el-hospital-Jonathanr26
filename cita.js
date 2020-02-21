@@ -20,7 +20,8 @@ export default class Cita {
   }
 
   getPerfil() {
-    return `${this.fecha.getFecha()}, ${this.hora.getFormato24()}, Dr.${this.doctor.doctor.apellidoPaterno}, ${this.paciente.nombre.getNombreCompleto()}`;
+    return `${this.fecha.getFecha()}, ${this.hora.getFormato24()}, 
+Dr.${this.doctor.doctor.apellidoPaterno}, ${this.paciente.nombre.getNombreCompleto()}`;
   }
 }
 /*
