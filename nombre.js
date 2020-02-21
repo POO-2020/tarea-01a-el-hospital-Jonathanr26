@@ -1,9 +1,9 @@
 export default class Nombre {
     /**
      *
-     * @param {string} nombre | Nombre del paciente
-     * @param {string} apellidoPaterno | Apellido paterno del paciente
-     * @param {string} apellidoMaterno | Apellido materno del paciente
+     * @param {string} nombre
+     * @param {string} apellidoPaterno 
+     * @param {string} apellidoMaterno 
      */
   
     constructor(nombre, apellidoPaterno, apellidoMaterno) {
