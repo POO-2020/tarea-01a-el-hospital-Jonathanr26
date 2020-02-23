@@ -23,10 +23,10 @@ Nombre:${this.doctor.getNombreCompleto()}, Telefeno:${this.telefono}`;
 }
 /*
 let doctor1 = new Doctor(
-    9977478,
-    "Pediatria",
     "Dr. Profesor Patricio",
-    3121881999
+    "Pediatria",
+    3121881999,
+    9977478    
 );
 
 console.log(doctor1.getPerfil());
